@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<groups>
+		<run>
+			<exclude name="smoke testing"></exclude>
+		</run>
+	</groups>
+  <test thread-count="5" name="Test">
+    <classes>
+     
+      <class name="groupExecution.Tc_4"/>
+      <class name="groupExecution.Tc_3"/>
+    
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test1">
+    <classes>
+      <class name="groupExecution.Tc_01"/>
+   
+      
+      <class name="groupExecution.Tc_2"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
